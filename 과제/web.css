@@ -1,0 +1,393 @@
+@charset "utf-8";
+
+
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    font-family: 'Pretendard','맑은 고딕', sans-serif;
+    text-align:center;
+}
+body h2 {
+    font-weight: bold;
+    font-size: 2.5em;
+    text-transform: capitalize;
+}
+
+header nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+}
+header nav .gnb {
+    display: flex;
+}
+header nav .gnb li {
+    display: inline-block;
+    text-align: center;
+}
+header nav .gnb li > a {
+    display: block;
+    margin: 0 0;
+    padding: 15px 15px;
+}
+header nav .gnb li .drop_down > li > a {
+    display: block;
+}
+header nav .gnb li .drop_down {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+}
+header nav .gnb li .drop_down li {
+    padding: 10px 0;
+}
+.gnb > li:hover .drop_down {
+    display: flex;
+}
+.drop_down:hover {
+    display: flex;
+}
+
+.gnb li:nth-child(5) a {
+    font-weight: 300 ;
+}
+.gnb li:nth-child(6) a {
+    font-weight: 300 ;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin: 10px 20px;
+}
+
+header .top_img {
+    background:url(./images/메인.jpeg) no-repeat 100% 0 / cover;
+    width: 100%; height: 100vh;
+    text-indent: -9999px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----main----- */
+main .top_main ul {
+    margin: 100px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+main .top_main ul li {
+    text-align: left;
+    text-transform: capitalize;
+    height: 400px;
+}
+
+main .top_main ul li:nth-child(1) {
+    border-right: 1px solid #000;
+}
+
+main .top_main ul li:nth-child(3) {
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+main .top_main ul li:nth-child(4) {
+    border-top: 1px solid #000;;
+}
+
+main .top_main ul li h3 {
+    font-size: 1.8em;
+    padding: 50px 0;
+}
+
+main .top_main ul li:nth-child(2) h3 {
+    padding: 50px;
+}
+main .top_main ul li:nth-child(2) p {
+    padding-left: 50px;
+}
+
+main .top_main ul li:nth-child(4) h3 {
+    padding: 50px;
+}
+main .top_main ul li:nth-child(4) p {
+    padding-left: 50px;
+}
+
+
+
+
+
+main .top2_main ul {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr); 
+}
+main .top2_main ul li {
+    display: grid;
+    grid-auto-rows: 30vh;
+    text-indent: -9999px;
+}
+
+/* .top2_main ul:hover li .main_img {
+    backdrop-filter: blur(20px);
+} */
+main .top2_main ul li:nth-child(1) {
+    background: url(./images/펭귄.jpeg) no-repeat 50% 50% / cover;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+main .top2_main ul li:nth-child(1) .main_img {
+    width: 100%;
+    height: 60vh;
+}
+main .top2_main ul li:nth-child(2) {
+    background: url(./images/펭귄1.jpeg) no-repeat 50% 50% / cover;
+}
+main .top2_main ul li:nth-child(3) {
+    background: url(./images/펭귄.jpeg) no-repeat 50% 50% / cover;
+}
+main .top2_main ul li:nth-child(4) {
+    background: url(./images/펭귄9.jpeg) no-repeat 50% 50% / cover;
+    grid-column: span 2;
+}
+main .top2_main ul li:nth-child(5) {
+    background: url(./images/펭귄2.jpeg) no-repeat 50% 50% / cover;
+    grid-column: span 2;
+}
+main .top2_main ul li:nth-child(6) {
+    background: url(./images/펭귄7.jpeg) no-repeat 50% 50% / cover;
+}
+main .top2_main ul li:nth-child(7) {
+    background: url(./images/펭귄4.jpeg) no-repeat 50% 50% / cover;
+}
+
+
+
+
+
+
+
+main .middle1_main {
+    margin: 50px 100px;
+}
+main .middle1_main h2 {
+    margin-bottom: 50px;
+}
+
+main .middle1_main p {
+    margin: 35px 0;
+}
+main .middle1_main .business {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 0 40px;
+}
+main .middle1_main .business img { 
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+ }
+main .middle1_main .business figure figcaption h5 {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+main .middle1_main .business figure figcaption p {
+    margin: 10px 0 50px 0;
+}
+
+main .video_box {
+    width: 100%;
+    background-color: #ddd;
+    padding: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .video_box section h3 {
+    width: 40vw;
+    height: 25vh;
+    text-align: left;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+main .video_box aside {
+    width: 45vw;
+    text-align: left;
+    height: 25vh;
+}
+main .video_box video {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 과일  */
+
+main .middle2_main .fruits {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center; 
+    
+    margin-top: 50px;
+
+    z-index: 999;
+}
+
+main .middle2_main h2 {
+    width: 100%;
+    margin: 50px 0;
+    display: block;
+}
+
+main .middle2_main figure {
+    margin: 0;
+    box-shadow: 
+    rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    transition: .5s linear
+}
+
+main .middle2_main img {
+    object-fit: cover;
+    width: 20vw;
+    height: 25vh;
+    vertical-align: top;
+}
+
+main .middle2_main figure figcaption {
+    height: 15vh; 
+    width: 20vw;
+}
+
+main .middle2_main figure figcaption h5 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+
+main .middle2_main figure figcaption p {
+    text-align: left;
+    padding: 10px;
+}
+
+main .middle2_main figure:hover {
+    transform: scale(1.15);
+   }
+
+
+
+
+
+
+
+/* 로케이션 */
+
+
+main .middle3_main h2 {
+    margin: 70px 0;
+}
+
+main .middle3_main .place p {
+    background-color: rgba(100, 100, 111, 0.2);
+    width: 20vw; height: 6vh;
+    padding: 5px;
+    margin-left: 20vw;
+    margin-bottom: 10vh;
+}
+main .middle3_main li {
+    display: flex;
+    text-align: left;
+    margin: 0 100px;
+    border-bottom: 1px solid black;
+    font-size: 1.1em;
+    padding: 20px 10px;
+}
+
+main .middle3_main .title {
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 10vw;
+    text-transform: uppercase;
+}
+
+
+/* 고정 하단 */
+main .top_footer {
+    margin: 100px 0 0;
+    background: url(./images/메인2.jpeg) no-repeat fixed 0 0 / cover;
+    height: 380px;
+    padding: 50px 0;
+    position: relative;
+}
+main .top_footer h2 {
+    color: rgb(13, 84, 101);
+}
+main .top_footer p {
+    color: white;
+    line-height: 2;
+}
+
+main .top_footer .contact_box {
+    text-transform: capitalize;
+    margin: 0 auto;
+    border: 2px solid rgb(222, 211, 245);
+    background-color: transparent;
+    width: 130px;
+    padding: 5px;
+    margin-top: 80px;
+    color: rgb(226, 230, 234);
+
+    position: relative;
+    top: -60px;
+}
+
+main .top_footer .contact_box p {
+    color: #fff;
+}
+
+
+
+main .box_up {
+    position: fixed;
+    bottom: 30px; right: 30px;
+    width: 3vw; height: 3vw;
+    background-color: #1c1c1c;
+}
+main .box_up span {
+    text-indent: -99999px;
+    color: white;
+}
+
+
+footer {
+    padding: 50px 0;
+}
+footer p{
+    line-height: 2;
+}

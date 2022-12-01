@@ -15,7 +15,7 @@
     */
 
   const defaultId = "web";
-  const defaultPw = "1234";
+  const defaultPw = 1234;
 
   let userId = prompt("아이디를 입력하세요.");
 
@@ -27,7 +27,6 @@
 
   // 아이디가 일치하지 않으면 아이디가 일치하지 않습니다 출력
 
-  console.log(defaultPw);
   if (userId === defaultId) {
     //아이디를 입력 받아 일치하면
     alert(`아이디가 일치합니다.`); //비밀번호 입력
@@ -43,20 +42,7 @@
     }
   } else {
     //아이디가 일치하지 않으면
-  }
   alert(`아이디가 일치하지 않습니다.`);
+}
 
-  /*
-    if (userId === "web") {
-      alert(`아이디가 일치합니다`);
-
-      if (userId === "web") {
-        prompt(`비밀번호를 입력하세요.`);
-      }
-      if (defaultPw === "1234") alert(`로그인 되었습니다.`);
-    } else {
-      alert("아이디가 일치하지 않습니다.");
-    }
-
-  */
 </script>
